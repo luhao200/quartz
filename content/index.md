@@ -1,6 +1,6 @@
 ---
-title: Welcome to Zhink
+title: Welcome to Quartz
 ---
 
-这是一个Obsidian笔记库。
-记录了一些笔记。
+This is a blank Quartz installation.
+See the [documentation](https://quartz.jzhao.xyz) for how to get started.
