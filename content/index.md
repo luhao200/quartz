@@ -1,6 +1,13 @@
 ---
-title: Welcome to Quartz
+title: Welcome to Zhink
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+这里是一个Obsidian笔记库 😋
+
+几乎包含我所有的笔记（只是几乎） 😮
+
+正在建设中（正在将笔记全部转换成双链笔记）
+
+当然，发布成网页会有各种各样的情况（并且我不打算上传图床，所以图片不能查看）
+
+貌似，渲染速度也有点问题...
