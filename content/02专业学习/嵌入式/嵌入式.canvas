@@ -1,0 +1,23 @@
+{
+	"nodes":[
+		{"id":"86b5d8605e97f44b","type":"file","file":"02专业学习/C语言/C语言.md","x":-248,"y":-172,"width":400,"height":400},
+		{"id":"f758d023a7f4bd19","type":"file","file":"02专业学习/嵌入式/嵌入式.md","x":-248,"y":440,"width":368,"height":160},
+		{"id":"44620550829e42d4","type":"file","file":"02专业学习/专业提升/C语言学习路线.md","x":380,"y":-172,"width":400,"height":400},
+		{"id":"ec5fa2470bf541d8","type":"text","text":"嵌入式学习","x":-914,"y":233,"width":250,"height":60},
+		{"id":"922dd1dce5cf19b2","type":"file","file":"02专业学习/专业提升/编程四大件.md","x":-248,"y":-600,"width":400,"height":280},
+		{"id":"878531e5e2c739d9","type":"text","text":"相关博主，公众号","x":-664,"y":600,"width":250,"height":60},
+		{"id":"336ac98a481f6f3f","type":"text","text":"通过开源库的代码，进行语言的学习","x":380,"y":-320,"width":312,"height":79},
+		{"id":"f759b7f997fdcf41","x":-1490,"y":181,"width":250,"height":60,"color":"1","type":"text","text":"学习方式有点问题"}
+	],
+	"edges":[
+		{"id":"86b22f9bdd375542","fromNode":"86b5d8605e97f44b","fromSide":"bottom","toNode":"f758d023a7f4bd19","toSide":"top"},
+		{"id":"44c131af1f774475","fromNode":"86b5d8605e97f44b","fromSide":"right","toNode":"44620550829e42d4","toSide":"left"},
+		{"id":"5601eeeb13c9b686","fromNode":"ec5fa2470bf541d8","fromSide":"right","toNode":"86b5d8605e97f44b","toSide":"left"},
+		{"id":"19f857f7569b5c83","fromNode":"ec5fa2470bf541d8","fromSide":"right","toNode":"f758d023a7f4bd19","toSide":"left"},
+		{"id":"3a26bb80d4ac69cf","fromNode":"ec5fa2470bf541d8","fromSide":"top","toNode":"922dd1dce5cf19b2","toSide":"left","label":"闲暇时学习"},
+		{"id":"9bcf84b8dea099f0","fromNode":"f758d023a7f4bd19","fromSide":"left","toNode":"878531e5e2c739d9","toSide":"right"},
+		{"id":"332119cfc6866704","fromNode":"336ac98a481f6f3f","fromSide":"left","toNode":"86b5d8605e97f44b","toSide":"top"},
+		{"id":"8a958f513632a999","fromNode":"44620550829e42d4","fromSide":"bottom","toNode":"f758d023a7f4bd19","toSide":"right"},
+		{"id":"d375ce578ef437e8","fromNode":"ec5fa2470bf541d8","fromSide":"left","toNode":"f759b7f997fdcf41","toSide":"right"}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"nodes":[
+		{"id":"e9f42b08f3c3b8f5","type":"text","text":"迁移到Obsidian","x":-480,"y":-90,"width":250,"height":50},
+		{"id":"1179a0d679e786fc","type":"text","text":"Obsidian分很多个笔记库的问题","x":-140,"y":-90,"width":380,"height":60,"color":"4"},
+		{"id":"7404d19065fa7729","type":"text","text":"专业知识学习","x":380,"y":-90,"width":250,"height":60},
+		{"id":"b9a415adfa7dd852","type":"text","text":"生活","x":380,"y":-4,"width":250,"height":60},
+		{"id":"fe9bd34554a89047","type":"file","file":"01数字生活/Obsidian/视频学习/Chris就是Chris/Obsidian入门保姆级教程：20分钟轻松上手Obsidian！.md","x":275,"y":172,"width":518,"height":228},
+		{"id":"815a89e6c7a1d65e","type":"text","text":"Obsidian视频学习","x":-140,"y":286,"width":230,"height":65},
+		{"id":"b1f231dbf34d1f86","type":"text","text":"视频学习笔记","x":-895,"y":-90,"width":180,"height":60,"color":"4"},
+		{"id":"94e21eacd4ec10d5","type":"text","text":"media插件","x":-1280,"y":-90,"width":250,"height":60},
+		{"id":"355977bfa3352605","type":"text","text":"media 控制视频的快捷键","x":-1720,"y":-90,"width":310,"height":60},
+		{"id":"e851f728e981a7ff","type":"file","file":"01数字生活/Obsidian/Z归档/迁移所遇到的问题.canvas","x":-1360,"y":200,"width":1005,"height":760,"color":"4"},
+		{"id":"67581679ef955e7f","type":"file","file":"01数字生活/Obsidian/视频学习/Chris就是Chris/全网最乱最普通的第二大脑！普通人如何记笔记！.md","x":275,"y":460,"width":725,"height":588},
+		{"id":"d676bf592b2af37f","type":"file","file":"01数字生活/Obsidian/视频学习/Chris就是Chris/普通人如何在obsidian整理管理笔记？.md","x":275,"y":1100,"width":529,"height":200},
+		{"id":"9047af51433c4b47","type":"file","file":"01数字生活/Obsidian/视频学习/Chris就是Chris/一键添加，无限可能：Obsidian QuickAdd插件使用完全指南.md","x":275,"y":1360,"width":529,"height":220},
+		{"id":"b1b4631ac0d7ac9a","type":"text","text":"### 同步\nOnedrive\nS3\nGit","x":-200,"y":-340,"width":250,"height":180,"color":"4"}
+	],
+	"edges":[
+		{"id":"95cf4037d9c62aa0","fromNode":"b1f231dbf34d1f86","fromSide":"left","toNode":"94e21eacd4ec10d5","toSide":"right"},
+		{"id":"b010c575e134ffdd","fromNode":"815a89e6c7a1d65e","fromSide":"right","toNode":"fe9bd34554a89047","toSide":"left"},
+		{"id":"7c837a574b3c95e7","fromNode":"815a89e6c7a1d65e","fromSide":"right","toNode":"67581679ef955e7f","toSide":"left"},
+		{"id":"a6043c4fa446b4b3","fromNode":"94e21eacd4ec10d5","fromSide":"left","toNode":"355977bfa3352605","toSide":"right"},
+		{"id":"3083bd4891c95e7c","fromNode":"815a89e6c7a1d65e","fromSide":"right","toNode":"d676bf592b2af37f","toSide":"left"},
+		{"id":"4dc0a6e3793bfbf9","fromNode":"815a89e6c7a1d65e","fromSide":"right","toNode":"9047af51433c4b47","toSide":"left"},
+		{"id":"5a8d458dfd0f15fa","fromNode":"e9f42b08f3c3b8f5","fromSide":"bottom","toNode":"815a89e6c7a1d65e","toSide":"top"},
+		{"id":"04263851228c7870","fromNode":"e9f42b08f3c3b8f5","fromSide":"left","toNode":"b1f231dbf34d1f86","toSide":"right"},
+		{"id":"f258c4fefe47138a","fromNode":"e851f728e981a7ff","fromSide":"top","toNode":"e9f42b08f3c3b8f5","toSide":"bottom"},
+		{"id":"36d24705033d05ca","fromNode":"e9f42b08f3c3b8f5","fromSide":"right","toNode":"1179a0d679e786fc","toSide":"left"},
+		{"id":"30d35f7b27a00be0","fromNode":"e9f42b08f3c3b8f5","fromSide":"top","toNode":"b1b4631ac0d7ac9a","toSide":"left"},
+		{"id":"401f62edf04c1d04","fromNode":"1179a0d679e786fc","fromSide":"right","toNode":"b9a415adfa7dd852","toSide":"left"},
+		{"id":"8716baddb5da4405","fromNode":"1179a0d679e786fc","fromSide":"right","toNode":"7404d19065fa7729","toSide":"left"}
+	]
+}
