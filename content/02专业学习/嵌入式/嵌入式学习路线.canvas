@@ -1,0 +1,28 @@
+{
+	"nodes":[
+		{"id":"86b5d8605e97f44b","type":"file","file":"02专业学习/C语言/C语言.md","x":-320,"y":-298,"width":400,"height":252,"color":"4"},
+		{"id":"f759b7f997fdcf41","type":"text","text":"学习方式有点问题","x":-1120,"y":435,"width":250,"height":60,"color":"1"},
+		{"id":"f758d023a7f4bd19","type":"file","file":"02专业学习/嵌入式/嵌入式.md","x":-320,"y":10,"width":400,"height":910},
+		{"id":"967244f8efdd8c9e","type":"file","file":"02专业学习/嵌入式/工具.md","x":-320,"y":1000,"width":400,"height":320},
+		{"id":"5de768de0f33cd9d","type":"text","text":"小智","x":324,"y":180,"width":113,"height":60},
+		{"id":"a6cda8bbc1e84279","type":"text","text":"小车","x":312,"y":290,"width":138,"height":60},
+		{"id":"091bcc9a09ff565e","type":"text","text":"SOLIDWORKS","x":256,"y":405,"width":250,"height":60},
+		{"id":"9713136e1e8ebf1c","type":"text","text":"江科大标准库","x":253,"y":80,"width":256,"height":50},
+		{"id":"ec5fa2470bf541d8","type":"text","text":"嵌入式学习","x":-800,"y":423,"width":165,"height":85},
+		{"id":"336ac98a481f6f3f","type":"text","text":"通过开源库的代码，进行语言的学习","x":180,"y":-212,"width":400,"height":80},
+		{"id":"657c0a6b3f41b053","x":-898,"y":129,"width":361,"height":102,"type":"text","text":"不一定要一个课程学完再接着下一步，可以同步进行"}
+	],
+	"edges":[
+		{"id":"86b22f9bdd375542","fromNode":"86b5d8605e97f44b","fromSide":"bottom","toNode":"f758d023a7f4bd19","toSide":"top"},
+		{"id":"5601eeeb13c9b686","fromNode":"ec5fa2470bf541d8","fromSide":"right","toNode":"86b5d8605e97f44b","toSide":"left"},
+		{"id":"19f857f7569b5c83","fromNode":"ec5fa2470bf541d8","fromSide":"right","toNode":"f758d023a7f4bd19","toSide":"left"},
+		{"id":"d375ce578ef437e8","fromNode":"ec5fa2470bf541d8","fromSide":"left","toNode":"f759b7f997fdcf41","toSide":"right"},
+		{"id":"960e6434a5fbfc4f","fromNode":"336ac98a481f6f3f","fromSide":"left","toNode":"86b5d8605e97f44b","toSide":"right"},
+		{"id":"b2805dc5f24b24f6","fromNode":"ec5fa2470bf541d8","fromSide":"right","toNode":"967244f8efdd8c9e","toSide":"left"},
+		{"id":"5d8f1ed6b57d2cf9","fromNode":"9713136e1e8ebf1c","fromSide":"bottom","toNode":"5de768de0f33cd9d","toSide":"top"},
+		{"id":"1dc1150d160874d4","fromNode":"86b5d8605e97f44b","fromSide":"right","toNode":"9713136e1e8ebf1c","toSide":"top"},
+		{"id":"5043dd88670f0d66","fromNode":"5de768de0f33cd9d","fromSide":"bottom","toNode":"a6cda8bbc1e84279","toSide":"top"},
+		{"id":"f799faa0ff2281e3","fromNode":"a6cda8bbc1e84279","fromSide":"bottom","toNode":"091bcc9a09ff565e","toSide":"top"},
+		{"id":"3ac722e8a7ab488f","fromNode":"ec5fa2470bf541d8","fromSide":"top","toNode":"657c0a6b3f41b053","toSide":"bottom"}
+	]
+}

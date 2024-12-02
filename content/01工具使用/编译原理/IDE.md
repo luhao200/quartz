@@ -1,0 +1,37 @@
+---
+date: 2024-04-16 22:44:26
+tags:
+  - status/done
+  - type/大纲笔记
+  - pf/专业知识
+---
+
+- 集成开发环境
+	- [VSCode](../VSCode/VSCode.md)：==一般代码（快捷键共用）==
+		- 一般代码
+			- ​只打开src三个文件夹，用C/C++插件，如有必要可以在本目录下创建工作区
+			- ​搜索方便（设置搜索范围
+			- ​打开[GIT](../GIT/GIT.md)方便
+		- ​常用代码
+			- ​创建工作区，用Clang插件，不用C/C++插件
+		- ​使用SSH将终端集成
+		- ​link识别不了 #todo/收集箱
+	- CLion：==工作代码（快捷键方便）==
+		- [8309](../../04项目日志/保护装置/8309平台/8309.md)
+		- ​生成[CMakeLists.txt](CMake.md#^592d1a)方便
+			- ​创建[CMakeLists.txt](CMake.md#^592d1a)时，需要选上inc上级目录
+		- ​使用SSH将终端集成
+		- ​搜索需要设定范围
+		- ​双窗口
+	- Visual Studio 2022
+		- ​未知，link识别不了
+	- Source insight
+		- ​双窗口
+		- ​关联图
+- 文本编辑(配置文件)
+	- Writerside
+		- 打开 [GIT](../GIT/GIT.md) 方便
+		- 快捷键共用
+	- [VSCode](../VSCode/VSCode.md)
+		- 快
+	- Notepad++
