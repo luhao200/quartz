@@ -11,5 +11,6 @@ private/
 replit.nix
 
 .claude
+.codex
 .idea
 .quartz-build-check
