@@ -211,3 +211,66 @@ button.desktop-explorer h2 {
 .explorer-content .folder-outer > ul {
   border-left: 2px solid var(--secondary);
 }
+
+// ========== 首页 RecentNotes Brutalist 适配 ==========
+// 首页 beforeBody 中的 RecentNotes 直接渲染 .recent-notes
+.recent-notes {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  border-top: 2px solid var(--dark);
+
+  & > h3 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--gray);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin: 0 0 1rem;
+    font-family: var(--codeFont);
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .recent-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .recent-li {
+    border-bottom: 1px solid var(--lightgray);
+    padding: 0.75rem 0;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .section {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+    }
+
+    .desc h3 {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin: 0;
+      border-bottom: none;
+    }
+
+    .meta {
+      font-family: var(--codeFont);
+      font-size: 0.75rem;
+      color: var(--gray);
+      margin: 0;
+      white-space: nowrap;
+    }
+  }
+}
+
+// 首页新组件链接去掉下划线
+.category-card,
+.social-link {
+  border-bottom: none;
+}

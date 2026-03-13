@@ -36,10 +36,23 @@
   text-transform: uppercase;
   letter-spacing: -0.02em;
 
-  &::after {
-    content: ".";
-    color: var(--secondary);
+}
+
+.typewriter-cursor {
+  color: var(--secondary);
+  font-weight: 800;
+  animation: blink 0.7s step-end infinite;
+  transition: opacity 0.3s;
+
+  &.hidden {
+    opacity: 0;
+    animation: none;
   }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 .hero-intro {

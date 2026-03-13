@@ -2,6 +2,8 @@ import homeheroStyles from "./styles/homehero.scss"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
 import { pathToRoot } from "../util/path"
+// @ts-ignore
+import typewriterScript from "./scripts/typewriter.inline"
 
 const HomeHero: QuartzComponent = ({ cfg, fileData, allFiles, displayClass }: QuartzComponentProps) => {
   const frontmatter = fileData.frontmatter as Record<string, any> | undefined
@@ -36,7 +38,12 @@ const HomeHero: QuartzComponent = ({ cfg, fileData, allFiles, displayClass }: Qu
       </div>
 
       <div class="hero-right">
-        {heroTagline && <h1 class="hero-tagline">{heroTagline}</h1>}
+        {heroTagline && (
+          <h1 class="hero-tagline">
+            <span class="typewriter" data-text={heroTagline}></span>
+            <span class="typewriter-cursor">_</span>
+          </h1>
+        )}
         {heroIntro && <p class="hero-intro">{heroIntro}</p>}
 
         {featuredArticles.length > 0 && (
@@ -60,5 +67,6 @@ const HomeHero: QuartzComponent = ({ cfg, fileData, allFiles, displayClass }: Qu
 }
 
 HomeHero.css = homeheroStyles
+HomeHero.afterDOMLoaded = typewriterScript
 
 export default (() => HomeHero) satisfies QuartzComponentConstructor

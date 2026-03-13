@@ -6,16 +6,18 @@ export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [Component.TopNav()],
   afterBody: [],
-  footer: Component.Footer({
-    links: {
-      GitHub: "https://github.com/luhao200",
-    },
-  }),
+  footer: Component.Footer(),
 }
 
 // components for the home page (index)
 export const homePageLayout: PageLayout = {
-  beforeBody: [Component.HomeHero()],
+  beforeBody: [
+    Component.HomeHero(),
+    Component.HomeTechStack(),
+    Component.HomeStats(),
+    Component.HomeCategoryNav(),
+    Component.HomeSocial(),
+  ],
   left: [],
   right: [],
 }

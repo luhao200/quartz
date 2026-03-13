@@ -25,6 +25,10 @@ import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import TopNav from "./TopNav"
 import HomeHero from "./HomeHero"
+import HomeStats from "./HomeStats"
+import HomeTechStack from "./HomeTechStack"
+import HomeCategoryNav from "./HomeCategoryNav"
+import HomeSocial from "./HomeSocial"
 
 export {
   ArticleTitle,
@@ -54,4 +58,8 @@ export {
   ConditionalRender,
   TopNav,
   HomeHero,
+  HomeStats,
+  HomeTechStack,
+  HomeCategoryNav,
+  HomeSocial,
 }
