@@ -3,6 +3,13 @@ title: Welcome to Zhink
 tags:
   - kw/博客
   - status/done
+heroAvatar: Zassets/home-avatar.png
+heroTagline: 记录产生价值
+heroIntro: 嵌入式软件工程师
+featuredSlugs:
+  - AI编程+工具
+  - AI编程工作流
+  - Git的图形化使用
 ---
 
 这里是一个Obsidian笔记库 😋
