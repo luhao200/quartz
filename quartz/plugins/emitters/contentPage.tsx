@@ -6,7 +6,7 @@ import BodyConstructor from "../../components/Body"
 import { pageResources, renderPage } from "../../components/renderPage"
 import { FullPageLayout } from "../../cfg"
 import { pathToRoot } from "../../util/path"
-import { defaultContentPageLayout, sharedPageComponents } from "../../../quartz.layout"
+import { defaultContentPageLayout, homePageLayout, sharedPageComponents } from "../../../quartz.layout"
 import { Content } from "../../components"
 import { styleText } from "util"
 import { write } from "./helpers"
@@ -66,6 +66,7 @@ export const ContentPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOp
         Body,
         ...header,
         ...beforeBody,
+        ...homePageLayout.beforeBody,
         pageBody,
         ...afterBody,
         ...left,
@@ -85,7 +86,9 @@ export const ContentPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOp
 
         // only process home page, non-tag pages, and non-index pages
         if (slug.endsWith("/index") || slug.startsWith("tags/")) continue
-        yield processContent(ctx, tree, file.data, allFiles, opts, resources)
+
+        const pageLayout = slug === "index" ? { ...opts, ...homePageLayout } : opts
+        yield processContent(ctx, tree, file.data, allFiles, pageLayout, resources)
       }
 
       if (!containsIndex) {

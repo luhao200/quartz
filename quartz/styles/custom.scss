@@ -1,3 +1,26 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+
+// 橙色强调色覆盖
+:root[saved-theme="light"],
+:root:not([saved-theme="dark"]) {
+  --secondary: #f97316;
+  --tertiary: #fb923c;
+}
+
+:root[saved-theme="dark"] {
+  --secondary: #fb923c;
+  --tertiary: #f97316;
+}
+
+// 点阵背景纹理
+body {
+  background-image: radial-gradient(circle, var(--lightgray) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+:root[saved-theme="dark"] body {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+}

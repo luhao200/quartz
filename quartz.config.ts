@@ -10,6 +10,11 @@ const config: QuartzConfig = {
   configuration: {
     pageTitle: "Zhink",
     pageTitleSuffix: "",
+    navLinks: [
+      { label: "首页", href: "/" },
+      { label: "知识库", href: "/知识库" },
+      { label: "文章库", href: "/文章库" },
+    ],
     enableSPA: true,
     enablePopovers: true,
     analytics: {
