@@ -1,8 +1,6 @@
 @use "./base.scss";
 
-// put your custom CSS here!
-
-// 橙色强调色覆盖
+// ========== 颜色覆盖 ==========
 :root[saved-theme="light"],
 :root:not([saved-theme="dark"]) {
   --secondary: #f97316;
@@ -14,13 +12,202 @@
   --tertiary: #f97316;
 }
 
-// 点阵背景纹理
+// ========== 网格背景（细线网格，Brutalist 风格） ==========
 body {
-  background-image: radial-gradient(circle, var(--lightgray) 1px, transparent 1px);
+  background-image:
+    linear-gradient(var(--lightgray) 1px, transparent 1px),
+    linear-gradient(90deg, var(--lightgray) 1px, transparent 1px);
   background-size: 24px 24px;
 }
 
 :root[saved-theme="dark"] body {
-  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
   background-size: 24px 24px;
+}
+
+// ========== 全站标题 Brutalist 化 ==========
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 800;
+}
+
+// ========== 链接样式统一 ==========
+a {
+  border-bottom: 1.5px solid var(--secondary);
+
+  &:hover {
+    border-bottom-color: var(--tertiary);
+  }
+
+  &.internal {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+    border-bottom: 1.5px dashed var(--secondary);
+
+    &:hover {
+      border-bottom-style: solid;
+    }
+  }
+}
+
+// 导航和卡片等处链接不要下划线
+.top-nav a,
+.hero-card,
+.breadcrumb-element a,
+.explorer-content a,
+.folder-container a,
+.folder-container button,
+footer a,
+.page-title a,
+.backlinks a,
+.graph a,
+.toc a,
+a[role="anchor"] {
+  border-bottom: none;
+}
+
+// ========== 分割线 Brutalist ==========
+hr {
+  width: 100%;
+  margin: 2.5rem auto;
+  height: 0;
+  border: none;
+  border-top: 2px solid var(--dark);
+  background: none;
+}
+
+// ========== 代码块 Brutalist 化 ==========
+pre {
+  border-radius: 0;
+  border: 2px solid var(--dark);
+
+  > code {
+    &::before {
+      content: "terminal_";
+      font-family: var(--codeFont);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--gray);
+      display: block;
+      padding: 0.2rem 0.25rem 0;
+      border-bottom: 1px solid var(--lightgray);
+      margin-bottom: 0.25rem;
+    }
+  }
+}
+
+// 有标题的代码块不显示默认 terminal_ 标签
+figure[data-rehype-pretty-code-figure] > pre > code::before {
+  display: none;
+}
+
+figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
+  border-radius: 0;
+  border: 2px solid var(--dark);
+  border-bottom: 1px solid var(--lightgray);
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+}
+
+figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] + pre {
+  border-top: none;
+}
+
+code {
+  border-radius: 0;
+  border: 1px solid var(--lightgray);
+  background: transparent;
+}
+
+// ========== 去圆角 ==========
+img {
+  border-radius: 0;
+}
+
+.text-highlight {
+  border-radius: 0;
+}
+
+// ========== blockquote 强化 ==========
+blockquote {
+  border-left: 4px solid var(--secondary);
+  background: rgba(249, 115, 22, 0.03);
+  padding: 0.75rem 1rem;
+  margin-left: 0;
+}
+
+:root[saved-theme="dark"] blockquote {
+  background: rgba(251, 146, 60, 0.05);
+}
+
+// ========== 表格 Brutalist ==========
+th {
+  border-bottom: 3px solid var(--dark);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-family: var(--codeFont);
+  font-size: 0.85rem;
+}
+
+// ========== 搜索按钮 ==========
+.search > .search-button {
+  border-radius: 0;
+  border: 2px solid var(--dark);
+}
+
+// 搜索覆盖层需要高于导航栏
+.search > .search-container {
+  z-index: 9999;
+}
+
+// 顶部导航加入后，搜索弹层需要避开导航所在区域
+.search > .search-container > .search-space {
+  margin-top: max(11rem, calc(12vh + 6rem));
+}
+
+#quartz-body .sidebar.left {
+  z-index: 100;
+}
+
+// ========== 脚注分割线 ==========
+.footnotes {
+  border-top: 2px solid var(--dark);
+}
+
+// ========== 面包屑 ==========
+.breadcrumb-container {
+  font-family: var(--codeFont);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+// ========== 页脚 ==========
+footer {
+  border-top: none;
+  padding-top: 1.5rem;
+  font-family: var(--codeFont);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+// ========== 侧边栏标题 ==========
+button.toc-header h3,
+button.desktop-explorer h2 {
+  font-family: var(--codeFont);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+// ========== 资源管理器缩进线 ==========
+.explorer-content .folder-outer > ul {
+  border-left: 2px solid var(--secondary);
 }
