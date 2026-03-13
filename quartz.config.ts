@@ -12,8 +12,9 @@ const config: QuartzConfig = {
     pageTitleSuffix: "",
     navLinks: [
       { label: "首页", href: "/" },
-      { label: "知识库", href: "/知识库" },
-      { label: "文章库", href: "/文章库" },
+      { label: "技术文章", href: "/文章库/技术文章" },
+      { label: "归档文章", href: "/文章库/归档文章" },
+      { label: "知识库", href: "/知识库/专业学习/C语言/C语言" },
     ],
     enableSPA: true,
     enablePopovers: true,
