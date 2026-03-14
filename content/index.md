@@ -7,19 +7,17 @@ heroAvatar: Zassets/home-avatar.png
 heroTagline: 记录产生价值
 heroIntro: 嵌入式软件工程师
 featuredSlugs:
-  - AI编程+工具
   - AI编程工作流
+  - AI编程+工具
   - Git的图形化使用
 aboutMe: 专注嵌入式软件开发，热爱用技术解决实际问题。这里记录我的学习笔记、技术探索和工程实践。
 techStack:
   - C
-  - C++
   - STM32
   - Linux
-  - FreeRTOS
+  - AI编码
   - Git
   - Python
-  - AI编码
 categoryNav:
   - name: C语言
     slug: 知识库/专业学习/C语言
@@ -43,4 +41,7 @@ socialLinks:
   - platform: github
     url: https://github.com/luhao200
     label: GitHub
+  - platform: email
+    url: mailto:luhao200@foxmail.com
+    label: Email
 ---
