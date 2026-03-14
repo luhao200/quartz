@@ -13,10 +13,10 @@ export const sharedPageComponents: SharedLayout = {
 export const homePageLayout: PageLayout = {
   beforeBody: [
     Component.HomeHero(),
-    Component.HomeTechStack(),
-    Component.HomeStats(),
+    Component.HomeFeatured(),
     Component.HomeCategoryNav(),
-    Component.HomeSocial(),
+    //Component.HomeStats(),
+    //Component.HomeSocial(),
   ],
   left: [],
   right: [],

@@ -28,6 +28,7 @@ import HomeHero from "./HomeHero"
 import HomeStats from "./HomeStats"
 import HomeTechStack from "./HomeTechStack"
 import HomeCategoryNav from "./HomeCategoryNav"
+import HomeFeatured from "./HomeFeatured"
 import HomeSocial from "./HomeSocial"
 
 export {
@@ -61,5 +62,6 @@ export {
   HomeStats,
   HomeTechStack,
   HomeCategoryNav,
+  HomeFeatured,
   HomeSocial,
 }
