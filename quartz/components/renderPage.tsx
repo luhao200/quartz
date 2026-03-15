@@ -2,7 +2,7 @@ import { render } from "preact-render-to-string"
 import { QuartzComponent, QuartzComponentProps } from "./types"
 import HeaderConstructor from "./Header"
 import BodyConstructor from "./Body"
-import { JSResourceToScriptElement, StaticResources } from "../util/resources"
+import { JSResourceToScriptElement, StaticResources, addBuildVersion } from "../util/resources"
 import { FullSlug, RelativeURL, joinSegments, normalizeHastElement } from "../util/path"
 import { clone } from "../util/clone"
 import { visit } from "unist-util-visit"
@@ -26,20 +26,21 @@ const headerRegex = new RegExp(/h[1-6]/)
 export function pageResources(
   baseDir: FullSlug | RelativeURL,
   staticResources: StaticResources,
+  buildId?: string,
 ): StaticResources {
-  const contentIndexPath = joinSegments(baseDir, "static/contentIndex.json")
+  const contentIndexPath = addBuildVersion(joinSegments(baseDir, "static/contentIndex.json"), buildId)
   const contentIndexScript = `const fetchData = fetch("${contentIndexPath}").then(data => data.json())`
 
   const resources: StaticResources = {
     css: [
       {
-        content: joinSegments(baseDir, "index.css"),
+        content: addBuildVersion(joinSegments(baseDir, "index.css"), buildId),
       },
       ...staticResources.css,
     ],
     js: [
       {
-        src: joinSegments(baseDir, "prescript.js"),
+        src: addBuildVersion(joinSegments(baseDir, "prescript.js"), buildId),
         loadTime: "beforeDOMReady",
         contentType: "external",
       },
@@ -55,7 +56,7 @@ export function pageResources(
   }
 
   resources.js.push({
-    src: joinSegments(baseDir, "postscript.js"),
+    src: addBuildVersion(joinSegments(baseDir, "postscript.js"), buildId),
     loadTime: "afterDOMReady",
     moduleType: "module",
     contentType: "external",

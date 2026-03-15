@@ -88,6 +88,17 @@ async function _navigate(url: URL, isBack: boolean = false) {
   const html = p.parseFromString(contents, "text/html")
   normalizeRelativeURLs(html, url)
 
+  const currentBuildId = document.head
+    .querySelector('meta[name="quartz-build-id"]')
+    ?.getAttribute("content")
+  const nextBuildId = html.head
+    .querySelector('meta[name="quartz-build-id"]')
+    ?.getAttribute("content")
+  if (currentBuildId && nextBuildId && currentBuildId !== nextBuildId) {
+    window.location.assign(url.toString())
+    return
+  }
+
   let title = html.querySelector("title")?.textContent
   if (title) {
     document.title = title

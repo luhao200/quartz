@@ -67,6 +67,13 @@ export interface StaticResources {
   additionalHead: (JSX.Element | ((pageData: QuartzPluginData) => JSX.Element))[]
 }
 
+export function addBuildVersion(resourcePath: string, buildId?: string): string {
+  if (!buildId) return resourcePath
+
+  const separator = resourcePath.includes("?") ? "&" : "?"
+  return `${resourcePath}${separator}v=${encodeURIComponent(buildId)}`
+}
+
 export type StringResource = string | string[] | undefined
 export function concatenateResources(...resources: StringResource[]): StringResource {
   return resources
