@@ -39,6 +39,7 @@ backup
 test
 doc
 reference
+tmp
 ```
 
 ## python

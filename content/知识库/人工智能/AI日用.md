@@ -25,16 +25,24 @@ tags:
     - 沉浸式翻译：自带硅基流动
     - 浸入式学习助手：硅基流动：Qwen/Qwen3-8B
 
+## 付费
+
+chatgptteam 10/月 网页/codex
+qoder 70/月 编程日用
+codeplan 
+grok 8月份 网页搜索
+Claude 中转站 ClaudeCode
+
 ## 常用AI擅长领域
 
 | 系列       |                  |
 | -------- | ---------------- |
 | chatgpt  | 通用，网页端较完善        |
 | claude   | 编程类，ClaudeCode使用 |
-| gemini   | 通用               |
+| gemini   | 通用，绘图            |
 | grok     | 搜索               |
 | 豆包       |                  |
-| 元宝       |                  |
+| 元宝       | 公众号              |
 | 千问       |                  |
 | Kimi     |                  |
 | deepseek |                  |

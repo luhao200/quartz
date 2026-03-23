@@ -16,7 +16,7 @@ url: https://github.com/Fission-AI/OpenSpec/blob/main/docs/commands.md
 /opsx:new
 /opsx:continue（可选）/opsx:ff
 /opsx:apply
-/opsx:verify（可选）
+/opsx:verify（可选、一般不选）
 /opsx:archive
 
 ### 注意

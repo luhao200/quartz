@@ -1,4 +1,4 @@
-## 前置准备
+## 前置准备（新项目库需做）
 
 开始一个新项目时，完成以下规范化工作：
 
@@ -12,7 +12,7 @@
 ## 前期调研
 
 - **input**：产品想法、项目需求
-- **output**：对产品/项目的概念理解、技术路线初步方案
+- **output**：对产品/项目的概念理解、技术路线初步方案、项目所需附件
 
 ### 新产品调研
 
@@ -26,7 +26,7 @@
 
 ### 新功能调研
 
-分析现有代码架构，重点关注与新功能相关的代码和资源（如硬件原理图）。
+分析现有代码架构，重点关注与新功能相关的代码和资源（如硬件原理图）。收集所需文档和附件。
 
 **工具**：CodeX、Claude Code、Qoder
 
@@ -35,27 +35,28 @@
 ## 需求分析
 
 - **input**：简易需求（一句话描述 + 关键约束）
-- **output**：详细需求文档 `requirements.md`
+- **output**：详细需求文档 `require.md`
 
 ### 优化简易需求
 
-将简易需求优化为结构化的简要需求文档 `briefrequirements.md`。
+将简易需求优化为结构化的简要需求文档 `briefrequire.md`。
 
-| 场景  | 工具                            |
-| --- | ----------------------------- |
-| 新产品 | 使用提示词优化插件                     |
-| 新功能 | Augment / Qoder 优化提示词         |
+| 场景  | 工具                           |
+| --- | ---------------------------- |
+| 新产品 | 使用提示词优化插件                    |
+| 新功能 | Augment / Qoder / Trae 优化提示词 |
 
 ### 需求详细化
 
-将 `briefrequirements.md` 展开为 `requirements.md`。
+将 `briefrequire.md` 展开为 `require.md`。
 
-| 场景  | 工具与方式                                                                                 |
-| --- | ------------------------------------------------------------------------------------- |
-| 新产品 | ChatGPT、Gemini、Deep Research                                                          |
-| 新功能 | **CodeX**：Plan 模式 / `briefrequirement_to_requirement` 命令                              |
-|     | **Claude Code**：Plan 模式 / `briefrequirement_to_requirement` 命令（积极使用`AskUserQuestion`） |
-|     | **Qoder**：Spec 功能                                                                     |
+| 场景  | 工具与方式                                          |
+| --- | ---------------------------------------------- |
+| 新产品 | ChatGPT、Gemini、Deep Research                   |
+| 新功能 | **CodeX**：Plan 模式                              |
+|     | **Claude Code**：Plan 模式（积极使用`AskUserQuestion`） |
+|     | **Qoder**：Spec 功能                              |
+|     | /opsx:explore                                  |
 
 关键动作：
 
@@ -64,29 +65,28 @@
 
 ### 需求审批
 
-对 `requirements.md` 进行最终审查和修正。
+对 `require.md` 进行最终审查和修正。
 
-| 场景  | 工具                              |
-| --- | ------------------------------- |
-| 新产品 | ChatGPT、Gemini                  |
-| 新功能 | CodeX：`doc_audit` 命令            |
+| 场景  | 工具                            |
+| --- | ----------------------------- |
+| 新产品 | ChatGPT、Gemini                |
+| 新功能 | CodeX：结合代码库和相关文件，审查这个需求文档是否合理 |
 
 ---
 
 ## 编码执行
 
-- **input**：`requirements.md`
+- **input**：`require.md`
 - **output**：代码 + Git 提交
 
 ### OpenSpec 流程
 
-按以下三步执行：
+按以下三步执行（强烈推荐codex，因为只有gpt的模型才有上下文任务工作能力）：
 
-1. **openspec-proposal**：`requirements.md` → OpenSpec 工程（拆解任务与方案）
-2. **openspec-apply**：OpenSpec 工程 → 代码实现
-3. **openspec-archive**：OpenSpec 工程 → 归档并 Git 提交
+1. **/opsx:propose**：`require.md` → OpenSpec 工程（拆解任务与方案）
+2. **/opsx:apply**：OpenSpec 工程 → 代码实现
 
-### Issues CSV 流程（可选）
+### Issues CSV 流程（待测试，可选）
 
 适用于需要精细化进度跟踪的场景。
 
@@ -123,6 +123,10 @@
 **工具**：Keil、串口打印、IDE Debug、实验现象观察
 
 与 AI 实时沟通时，将每条实验现象逐一描述清楚。
+
+## 项目完成
+
+**/opsx:archive**：OpenSpec 工程 → 归档并 Git 提交
 
 ---
 

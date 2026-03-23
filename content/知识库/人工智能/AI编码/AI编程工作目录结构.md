@@ -37,12 +37,12 @@ tags:
     - docs
         - spec
             - feat1
-                - briefrequirements.md
-                - requirements.md
-                - 一些其他类型资料，如方案、硬件原理图等等
+                - briefrequire.md（简要需求文档
+                - require.md（需求文档
+                - hw-sch（原理图
+                - ref-code（其他仓库相关的代码，通过软连接实现（mklink /D 目标目录 源目录
+                - 一些其他类型资料，如方案、等等
             - feat2
         - wiki
     - openspec
-    - reference
-        - 其他仓库相关的代码，通过软连接实现（mklink /D 目标目录 源目录
     - README.md
